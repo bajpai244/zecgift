@@ -19,5 +19,9 @@
 		"svelte-check": "^4.3.4",
 		"typescript": "^5.9.3",
 		"vite": "^7.2.6"
+	},
+	"dependencies": {
+		"@chainsafe/webzjs-keys": "^0.1.0",
+		"@scure/bip39": "^2.0.1"
 	}
 }
