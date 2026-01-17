@@ -22,8 +22,8 @@
     "vite-plugin-cross-origin-isolation": "^0.1.6"
   },
   "dependencies": {
-    "@chainsafe/webzjs-wallet": "file:../WebZjs/packages/webzjs-wallet",
-    "@chainsafe/webzjs-keys": "file:../WebZjs/packages/webzjs-keys",
+    "@chainsafe/webzjs-wallet": "file:../WebZjs-fork/packages/webzjs-wallet",
+    "@chainsafe/webzjs-keys": "file:../WebZjs-fork/packages/webzjs-keys",
     "@scure/bip39": "^2.0.1"
   }
 }

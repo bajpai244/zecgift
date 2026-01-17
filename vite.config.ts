@@ -10,7 +10,7 @@ export default defineConfig({
   },
   server: {
     fs: {
-      allow: ["../WebZjs/packages"],
+      allow: ["../WebZjs-fork/packages"],
     },
   },
 });

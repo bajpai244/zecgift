@@ -1,0 +1,613 @@
+inject.js:1 Port connected
+inject.js:1 Port connected
+content.js:2 Check phishing by URL: Passed.
+injected.js:1 Provider initialised
+injected.js:1 Provider initialised
+injected.js:1 Provider initialised
+injected.js:1 Deprecation warning: tabReply will be removed
+(anonymous) @ content.js:1
+reply @ content.js:1
+(anonymous) @ content.js:1
+await in (anonymous)
+i.emit @ content.js:1
+(anonymous) @ content.js:1
+send @ injected.js:1
+send @ injected.js:1
+getProviderInitData @ injected.js:1
+initSelectedAddress @ injected.js:1
+initEthereumProvider @ injected.js:1
+init @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+injected.js:1 Deprecation warning: tabReply will be removed
+(anonymous) @ content.js:1
+reply @ content.js:1
+(anonymous) @ content.js:1
+await in (anonymous)
+i.emit @ content.js:1
+(anonymous) @ content.js:1
+send @ injected.js:1
+send @ injected.js:1
+getProviderInitData @ injected.js:1
+getInitTronWeb @ injected.js:1
+initTronProvider @ injected.js:1
+init @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+injected.js:1 Deprecation warning: tabReply will be removed
+(anonymous) @ content.js:1
+reply @ content.js:1
+(anonymous) @ content.js:1
+await in (anonymous)
+i.emit @ content.js:1
+(anonymous) @ content.js:1
+send @ injected.js:1
+send @ injected.js:1
+_initRequest @ injected.js:1
+init @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+injected.js:1 TronLink initiated
+injected.js:1 Uncaught (in promise) TypeError: 'set' on proxy: trap returned falsish for property 'tronlinkParams'
+    at Ig (injected.js:1:2256268)
+Ig @ injected.js:1
+await in Ig
+e @ injected.js:1
+webzjs_wallet.js:1661  INFO webzjs_wallet::bindgen::wallet: Create account called
+
+webzjs_wallet.js:1661  INFO webzjs_wallet::wallet: Key successfully decoded. Importing into wallet
+
+webzjs_wallet.js:1661  INFO webzjs_wallet::wallet: Importing account with Ufvk: UnifiedFullViewingKey { transparent: Some(AccountPubKey(ExtendedPublicKey { public_key: PublicKey(091139cd29f11fcb5f81044058c24aee0746a586eb6801859d519bc0c8cc3415742f84afe39a1720a84d5773667ad5e9829b7053d0c89dbca23edcee63410aad), attrs: ExtendedKeyAttrs { depth: 3, parent_fingerprint: [171, 117, 6, 175], child_number: ChildNumber(2147483648), chain_code: [46, 49, 20, 209, 157, 115, 103, 19, 182, 104, 189, 159, 231, 192, 145, 120, 189, 237, 51, 252, 242, 19, 200, 184, 111, 149, 101, 218, 101, 5, 193, 60] } })), sapling: Some(DiversifiableFullViewingKey { fvk: FullViewingKey { vk: ViewingKey { ak: SpendValidatingKey(VerificationKey(VerificationKey { point: ExtendedPoint { u: 0x63e33bb0a9e99f917417b2844d5c837776d13ca1116b16a2cb3f360dd9cac3b9, v: 0x0ae6e4e0e1b20014f36ba196a0daa92e06f4145476c6ea6c0b54f8b90d81207a, z: 0x68bb35e728fe6c031ee23c4aa276545a18d81b23982425855323593298b9121c, t1: 0x0daad5281b8ba8696b8c5781db3ef3b082fc5bc5e2108f0e80f38fd3d5b59602, t2: 0x6265b33ec0c6cbb98e57916a5f5cc638b7f474db0ee8bb90b2464dc31eb63846 }, bytes: VerificationKeyBytes { bytes: "4853207b7bd1795cea6ac5d592dfa415023514b55c787e5699120dad0be8664c" } })), nk: NullifierDerivingKey(SubgroupPoint(ExtendedPoint { u: 0x12cd27b76f020de9ec2d293e31bc302ffbb557be7e01ef33f9117dbbf3556c82, v: 0x0102f3387cf22593790ff692b6424c5ead5272f0c0d768f3cc8efc9bdb0c9338, z: 0x4c872ab266772a538a72ddb36d8de76d62e62434cf1a0aa4573b41a01de902a3, t1: 0x6b981e00f3fc5ba45f6936451f25cf1f0bab829ec4f4e7440b4b965d070436b5, t2: 0x3e9df57f9cf80b70f56f428a3ab6a25a8700efc9e13fd6ccf53fbb0611bb545f })) }, ovk: OutgoingViewingKey([157, 23, 102, 113, 119, 225, 21, 225, 149, 56, 36, 60, 158, 166, 32, 194, 40, 233, 114, 98, 133, 12, 184, 225, 158, 25, 58, 245, 115, 28, 9, 57]) }, dk: DiversifierKey([131, 228, 113, 41, 172, 182, 137, 154, 243, 251, 68, 189, 251, 127, 224, 141, 48, 209, 159, 133, 73, 122, 19, 233, 120, 51, 29, 6, 0, 28, 125, 210]) }), orchard: Some(FullViewingKey { ak: SpendValidatingKey(VerificationKey(VerificationKey { point: Ep { x: 0x129949df86d237328bd3f1f38ac97bc480ec55a570ca63e1e55b7b951af8aa13, y: 0x06da15a6755e79cb98e74b56c1ed6b4bf7e01b4f3db7ce76f8b1d53e69015a1f, z: 0x36be7fbe3e7793f7e3f902418264f4c2a19627824a4b1292d49af40ad61e7217 }, bytes: VerificationKeyBytes { bytes: "31dc31d118cfd304d9536ee145f00cb3eefae6873659bf9241997c9892293507" } })), nk: NullifierDerivingKey(0x2e673ec2f666695734e8fabe9fe1a869b1c6181b3b76e66f7681adcbd7cc86cf), rivk: CommitIvkRandomness(0x29741dee642963a4cecfe6b2dd6839e31f3f2d27ca9f872b08bb79e57024c7b8) }), unknown: [] }
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3791966
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Fetching ChainTip(3791966..3792007)
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Scanning ChainTip(3791966..3792007)
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
++page.svelte:87 Balance: 100000
++page.svelte:88 Send amount (50%): 50000
++page.svelte:89 Recipient: utest1lxef53rh8pvcr8ach9svjc80k73jpawkxqhrtrnel3c9mysxx22z9650cke4sm6k57ew59wd56aml4xfkd0m73ezf7lj4f7kcj70tmjedcm2wvs8flptm2uwn5p5kxz9t0sa6vv9r8au6mlj9uhj2w5et3gvwsu8gygg64q3hhkuq58z046z0cxcdh8h2jl9mvsv2czvkakxjdhpm9t
++page.svelte:90 Account ID: 1
++page.svelte:99 Creating proposal...
+webzjs_wallet.js:1661  INFO webzjs_wallet::wallet: Chain height: Some(BlockHeight(3792006))
+
+webzjs_wallet.js:1661  INFO webzjs_wallet::wallet: target and anchor heights: Some((BlockHeight(3792007), BlockHeight(3791967)))
+
+webzjs_wallet.js:1661  INFO webzjs_wallet::wallet: Proposal: Proposal {
+    fee_rule: Zip317,
+    min_target_height: BlockHeight(
+        3792007,
+    ),
+    steps: NonEmpty {
+        head: Step {
+            transaction_request: TransactionRequest {
+                payments: {
+                    0: Payment {
+                        recipient_address: ZcashAddress {
+                            net: Test,
+                            kind: Unified(
+                                Address(
+                                    [
+                                        P2pkh(
+                                            [
+                                                229,
+                                                162,
+                                                244,
+                                                61,
+                                                220,
+                                                169,
+                                                0,
+                                                18,
+                                                146,
+                                                101,
+                                                143,
+                                                58,
+                                                148,
+                                                237,
+                                                65,
+                                                62,
+                                                74,
+                                                218,
+                                                109,
+                                                141,
+                                            ],
+                                        ),
+                                        Sapling(
+                                            [
+                                                206,
+                                                95,
+                                                150,
+                                                13,
+                                                56,
+                                                248,
+                                                72,
+                                                111,
+                                                47,
+                                                192,
+                                                99,
+                                                119,
+                                                151,
+                                                27,
+                                                124,
+                                                86,
+                                                236,
+                                                35,
+                                                55,
+                                                196,
+                                                40,
+                                                189,
+                                                111,
+                                                24,
+                                                236,
+                                                173,
+                                                160,
+                                                181,
+                                                2,
+                                                225,
+                                                224,
+                                                251,
+                                                185,
+                                                115,
+                                                211,
+                                                184,
+                                                190,
+                                                18,
+                                                22,
+                                                232,
+                                                22,
+                                                158,
+                                                104,
+                                            ],
+                                        ),
+                                        Orchard(
+                                            [
+                                                36,
+                                                240,
+                                                93,
+                                                237,
+                                                91,
+                                                110,
+                                                36,
+                                                149,
+                                                52,
+                                                68,
+                                                219,
+                                                158,
+                                                0,
+                                                238,
+                                                104,
+                                                41,
+                                                55,
+                                                212,
+                                                163,
+                                                128,
+                                                224,
+                                                211,
+                                                244,
+                                                241,
+                                                173,
+                                                124,
+                                                202,
+                                                218,
+                                                82,
+                                                75,
+                                                162,
+                                                38,
+                                                7,
+                                                127,
+                                                214,
+                                                142,
+                                                176,
+                                                182,
+                                                22,
+                                                57,
+                                                37,
+                                                67,
+                                                57,
+                                            ],
+                                        ),
+                                    ],
+                                ),
+                            ),
+                        },
+                        amount: Zatoshis(
+                            50000,
+                        ),
+                        memo: None,
+                        label: None,
+                        message: None,
+                        other_params: [],
+                    },
+                },
+            },
+            transparent_inputs: [],
+            shielded_inputs: Some(
+                1,
+            ),
+            prior_step_inputs: [],
+            anchor_height: Some(
+                BlockHeight(
+                    3791967,
+                ),
+            ),
+            balance: TransactionBalance {
+                proposed_change: [
+                    ChangeValue(
+                        Shielded {
+                            protocol: Orchard,
+                            value: Zatoshis(
+                                40000,
+                            ),
+                            memo: None,
+                        },
+                    ),
+                ],
+                fee_required: Zatoshis(
+                    10000,
+                ),
+                total: Zatoshis(
+                    50000,
+                ),
+            },
+            is_shielding: false,
+            ..
+        },
+        tail: [],
+    },
+}
+
++page.svelte:105 Proposal created: Proposal {__wbg_ptr: 55276504}__wbg_ptr: 0[[Prototype]]: Object
++page.svelte:108 Signing transaction with seed phrase...
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
++page.svelte:114 Transaction signed, txids: Uint8Array(32) [155, 60, 173, 129, 109, 169, 98, 23, 82, 157, 64, 117, 87, 185, 208, 150, 202, 78, 13, 254, 251, 26, 227, 109, 111, 172, 25, 201, 57, 231, 123, 134, buffer: ArrayBuffer(32), byteLength: 32, byteOffset: 0, length: 32, Symbol(Symbol.toStringTag): 'Uint8Array']
++page.svelte:115 Transaction bytes (hex): 9b3cad816da96217529d407557b9d096ca4e0dfefb1ae36d6fac19c939e77b86
++page.svelte:118 Sending to network...
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
++page.svelte:124 Send error details:
+claimGift @ +page.svelte:124
+await in claimGift
+handle_event_propagation @ chunk-2ZDPGQTT.js?v=02ebe188:4390
++page.svelte:125 - message: Failed to send transaction
+claimGift @ +page.svelte:125
+await in claimGift
+handle_event_propagation @ chunk-2ZDPGQTT.js?v=02ebe188:4390
++page.svelte:126 - name: Error
+claimGift @ +page.svelte:126
+await in claimGift
+handle_event_propagation @ chunk-2ZDPGQTT.js?v=02ebe188:4390
++page.svelte:127 - stack: Error: Failed to send transaction
+    at imports.wbg.__wbg_new_c68d7209be747379 (http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet.js:1803:21)
+    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[5383]:0x63a1a8
+    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[3338]:0x5e1822
+    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[685]:0x3c780b
+    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[1830]:0x544a0f
+    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[5304]:0x638c34
+    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[5303]:0x638c26
+    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[5410]:0x63a59d
+    at __wbg_adapter_67 (http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet.js:320:10)
+    at real (http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet.js:121:20)
+claimGift @ +page.svelte:127
+await in claimGift
+handle_event_propagation @ chunk-2ZDPGQTT.js?v=02ebe188:4390
++page.svelte:128 - full object: {"stack":"Error: Failed to send transaction\n    at imports.wbg.__wbg_new_c68d7209be747379 (http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet.js:1803:21)\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[5383]:0x63a1a8\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[3338]:0x5e1822\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[685]:0x3c780b\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[1830]:0x544a0f\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[5304]:0x638c34\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[5303]:0x638c26\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[5410]:0x63a59d\n    at __wbg_adapter_67 (http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet.js:320:10)\n    at real (http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet.js:121:20)","message":"Failed to send transaction"}
+claimGift @ +page.svelte:128
+await in claimGift
+handle_event_propagation @ chunk-2ZDPGQTT.js?v=02ebe188:4390
++page.svelte:132 Claim error: Error: Failed to send transaction
+    at imports.wbg.__wbg_new_c68d7209be747379 (webzjs_wallet.js:1803:21)
+    at webzjs_wallet_bg.wasm:0x63a1a8
+    at webzjs_wallet_bg.wasm:0x5e1822
+    at webzjs_wallet_bg.wasm:0x3c780b
+    at webzjs_wallet_bg.wasm:0x544a0f
+    at webzjs_wallet_bg.wasm:0x638c34
+    at webzjs_wallet_bg.wasm:0x638c26
+    at webzjs_wallet_bg.wasm:0x63a59d
+    at __wbg_adapter_67 (webzjs_wallet.js:320:10)
+    at real (webzjs_wallet.js:121:20)
+claimGift @ +page.svelte:132
+await in claimGift
+handle_event_propagation @ chunk-2ZDPGQTT.js?v=02ebe188:4390
++page.svelte:133 Error keys: []
+claimGift @ +page.svelte:133
+await in claimGift
+handle_event_propagation @ chunk-2ZDPGQTT.js?v=02ebe188:4390
++page.svelte:134 Error full: {"stack":"Error: Failed to send transaction\n    at imports.wbg.__wbg_new_c68d7209be747379 (http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet.js:1803:21)\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[5383]:0x63a1a8\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[3338]:0x5e1822\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[685]:0x3c780b\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[1830]:0x544a0f\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[5304]:0x638c34\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[5303]:0x638c26\n    at http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet_bg.wasm:wasm-function[5410]:0x63a59d\n    at __wbg_adapter_67 (http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet.js:320:10)\n    at real (http://localhost:5173/@fs/Users/harshbajpai/Desktop/Projects/zcash_projects/WebZjs/packages/webzjs-wallet/webzjs_wallet.js:121:20)","message":"Failed to send transaction"}
+claimGift @ +page.svelte:134
+await in claimGift
+handle_event_propagation @ chunk-2ZDPGQTT.js?v=02ebe188:4390
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792007
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792006
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Fetching ChainTip(3792007..3792008)
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Scanning ChainTip(3792007..3792008)
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792008
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792007
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Fetching ChainTip(3792008..3792009)
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Scanning ChainTip(3792008..3792009)
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792008
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792008
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792008
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792008
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...
+
+webzjs_wallet.js:2283 using deprecated parameters for the initialization function; pass a single object instead
+__wbg_init @ webzjs_wallet.js:2283
+self.onmessage @ web_worker_module.bundler.js:8
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Sapling tree has 5 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Orchard tree has 1 subtrees
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Latest block height is 3792008
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Refreshing UTXOs for AccountId(1) from height 3792008
+
+webzjs_wallet.js:1661  INFO zcash_client_backend::sync: Waiting for cached blocks to be deleted...

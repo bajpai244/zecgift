@@ -5,8 +5,8 @@
     "": {
       "name": "zecgift",
       "dependencies": {
-        "@chainsafe/webzjs-keys": "file:../WebZjs/packages/webzjs-keys",
-        "@chainsafe/webzjs-wallet": "file:../WebZjs/packages/webzjs-wallet",
+        "@chainsafe/webzjs-keys": "file:../WebZjs-fork/packages/webzjs-keys",
+        "@chainsafe/webzjs-wallet": "file:../WebZjs-fork/packages/webzjs-wallet",
         "@scure/bip39": "^2.0.1",
       },
       "devDependencies": {
@@ -22,9 +22,9 @@
     },
   },
   "packages": {
-    "@chainsafe/webzjs-keys": ["@chainsafe/webzjs-keys@file:../WebZjs/packages/webzjs-keys", {}],
+    "@chainsafe/webzjs-keys": ["@chainsafe/webzjs-keys@file:../WebZjs-fork/packages/webzjs-keys", {}],
 
-    "@chainsafe/webzjs-wallet": ["@chainsafe/webzjs-wallet@file:../WebZjs/packages/webzjs-wallet", {}],
+    "@chainsafe/webzjs-wallet": ["@chainsafe/webzjs-wallet@file:../WebZjs-fork/packages/webzjs-wallet", {}],
 
     "@esbuild/aix-ppc64": ["@esbuild/aix-ppc64@0.27.2", "", { "os": "aix", "cpu": "ppc64" }, "sha512-GZMB+a0mOMZs4MpDbj8RJp4cw+w1WV5NYD6xzgvzUJ5Ek2jerwfO2eADyI6ExDSUED+1X8aMbegahsJi+8mgpw=="],
 

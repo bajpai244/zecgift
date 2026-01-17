@@ -1,0 +1,9 @@
+services:
+  envoy:
+    image: envoyproxy/envoy:v1.31-latest
+    ports:
+      - "8090:8080"
+      - "9901:9901"
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml:ro
+    command: /usr/local/bin/envoy -c /etc/envoy/envoy.yaml -l info
