@@ -43,6 +43,24 @@
 			console.log('Starting wallet sync...');
 			await wallet.sync();
 			console.log('Wallet has been synced');
+
+			// Get wallet summary with balances
+			const summary = await wallet.get_wallet_summary();
+			if (summary) {
+				console.log('Chain tip height:', summary.chain_tip_height);
+				console.log('Fully scanned height:', summary.fully_scanned_height);
+
+				// Get first account's balances (account_balances is an array of [accountId, balanceMap])
+				const balances = summary.account_balances;
+				if (balances && balances.length > 0) {
+					const [, balance] = balances[0];
+					console.log('Sapling balance:', balance.sapling_balance, 'zatoshi');
+					console.log('Orchard balance:', balance.orchard_balance, 'zatoshi');
+					console.log('Unshielded balance:', balance.unshielded_balance, 'zatoshi');
+				}
+			} else {
+				console.log('No wallet summary available yet');
+			}
 		} catch (error) {
 			console.error('Error:', error);
 		}
