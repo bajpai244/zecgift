@@ -21,6 +21,7 @@
 	let isSending = $state(false);
 	let sendError = $state('');
 	let sendSuccess = $state(false);
+	let txId = $state('');
 	let wallet: any = null;
 	let accountId: number = 0;
 	let pollInterval: ReturnType<typeof setInterval> | null = null;
@@ -43,6 +44,12 @@
 	function truncateLink(link: string): string {
 		if (link.length <= 40) return link;
 		return `${link.slice(0, 28)}...${link.slice(-8)}`;
+	}
+
+	// Truncate transaction ID for display
+	function truncateTxId(id: string): string {
+		if (id.length <= 16) return id;
+		return `${id.slice(0, 8)}...${id.slice(-8)}`;
 	}
 
 	// Reactive gift link
@@ -71,8 +78,8 @@
 		setTimeout(() => (linkCopied = false), 2000);
 	}
 
-	// Conservative fee estimate for ZIP-317 shielded transaction (0.0002 ZEC)
-	const ZIP317_FEE_ESTIMATE = 10000;
+	// Fee reserve for ZIP-317 shielded transaction (20000 zatoshi = 0.0002 ZEC)
+	const FEE_RESERVE = 30000;
 
 	// Claim gift - send ZEC to recipient address
 	async function claimGift() {
@@ -82,16 +89,16 @@
 		isSending = true;
 
 		try {
-			// For "send all", we need to leave enough for fee AND avoid dust change
-			// Try sending 50% of balance to test if transaction works
-			const sendAmount = Math.floor(balance * 0.6);
+			// Send all available funds minus fee reserve
+			const sendAmount = balance - FEE_RESERVE;
 			console.log('Balance:', balance);
-			console.log('Send amount (50%):', sendAmount);
+			console.log('Fee reserve:', FEE_RESERVE);
+			console.log('Send amount (balance - fee):', sendAmount);
 			console.log('Recipient:', recipientAddress);
 			console.log('Account ID:', accountId);
 
 			if (sendAmount <= 0) {
-				sendError = 'Balance too low to send';
+				sendError = 'Balance too low to send (need more than 0.0002 ZEC for fees)';
 				isSending = false;
 				return;
 			}
@@ -115,11 +122,19 @@
 			console.log('Transaction signed, txids:', authorizedTxns);
 			console.log('Transaction bytes (hex):', Array.from(authorizedTxns).map(b => b.toString(16).padStart(2, '0')).join(''));
 
+			// Extract txId from the authorized transactions (first 32 bytes reversed for txid)
+			// The authorizedTxns is a flat byte array where each txid is 32 bytes
+			const txIdBytes = authorizedTxns.slice(0, 32);
+			// Reverse bytes for display (Zcash txids are displayed in reverse byte order)
+			const txIdHex = Array.from(txIdBytes).reverse().map((b: number) => b.toString(16).padStart(2, '0')).join('');
+			console.log('Transaction ID:', txIdHex);
+
 			// Send to network
 			console.log('Sending to network...');
 			try {
 				await wallet.send_authorized_transactions(authorizedTxns);
 				console.log('Transaction sent successfully!');
+				txId = txIdHex;
 				sendSuccess = true;
 			} catch (sendErr: any) {
 				console.error('Send error details:');
@@ -245,6 +260,16 @@
 					<div class="success-icon">✓</div>
 					<p class="success-text">Gift claimed successfully!</p>
 					<p class="success-hint">ZEC has been sent to your address</p>
+					{#if txId}
+						<a
+							href="https://mainnet.zcashexplorer.app/transactions/{txId}"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="explorer-link"
+						>
+							View on Explorer: {truncateTxId(txId)}
+						</a>
+					{/if}
 				</div>
 			{:else}
 				<div class="balance-container">
@@ -255,6 +280,7 @@
 						{/if}
 					</div>
 					<p class="balance-label">Available to claim</p>
+					<p class="fee-hint">0.0002 ZEC will be deducted for network fees</p>
 				</div>
 
 				<div class="claim-form">
@@ -293,6 +319,7 @@
 			<p class="tagline">
 				Fund this address to create<br />a Zcash gift card
 			</p>
+			<p class="deposit-hint">Fund with at least 0.001 ZEC</p>
 
 			{#if isLoading}
 				<div class="loading">
@@ -564,6 +591,22 @@
 		margin: 12px 0 0 0;
 	}
 
+	.deposit-hint {
+		font-size: 13px;
+		color: #666;
+		margin: -20px 0 24px 0;
+		background: #f0f7ff;
+		padding: 8px 16px;
+		border-radius: 8px;
+		border: 1px solid #d0e3ff;
+	}
+
+	.fee-hint {
+		font-size: 12px;
+		color: #888;
+		margin: 4px 0 0 0;
+	}
+
 	/* Claim mode styles */
 	.balance-label {
 		font-size: 14px;
@@ -676,5 +719,23 @@
 		font-size: 14px;
 		color: #666;
 		margin: 0;
+	}
+
+	.explorer-link {
+		display: inline-block;
+		margin-top: 16px;
+		color: #1a73e8;
+		text-decoration: none;
+		font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+		font-size: 13px;
+		padding: 8px 16px;
+		background: #f0f7ff;
+		border-radius: 8px;
+		transition: background 0.2s;
+	}
+
+	.explorer-link:hover {
+		background: #e0efff;
+		text-decoration: underline;
 	}
 </style>
