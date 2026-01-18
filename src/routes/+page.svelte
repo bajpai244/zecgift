@@ -329,6 +329,7 @@
 				</div>
 
 				<p class="deposit-hint">Fund with at least 0.001 ZEC</p>
+				<p class="confirm-hint">Deposits take 75-90 seconds to confirm</p>
 
 				<div class="address-container">
 					<div class="address" title={address}>
@@ -543,11 +544,17 @@
 	.deposit-hint {
 		font-size: 13px;
 		color: #666;
-		margin: -20px 0 24px 0;
+		margin: 0 0 8px 0;
 		background: #f0f7ff;
 		padding: 8px 16px;
 		border-radius: 8px;
 		border: 1px solid #d0e3ff;
+	}
+
+	.confirm-hint {
+		font-size: 12px;
+		color: #888;
+		margin: 0 0 24px 0;
 	}
 
 	.fee-hint {
