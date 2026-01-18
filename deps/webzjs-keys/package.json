@@ -1,0 +1,24 @@
+{
+  "name": "@chainsafe/webzjs-keys",
+  "type": "module",
+  "collaborators": [
+    "ChainSafe Systems"
+  ],
+  "description": "A browser client-side library for generating and manipulating zcash keys",
+  "version": "0.1.0",
+  "license": "MIT OR Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChainSafe/WebZjs"
+  },
+  "files": [
+    "webzjs_keys_bg.wasm",
+    "webzjs_keys.js",
+    "webzjs_keys.d.ts"
+  ],
+  "main": "webzjs_keys.js",
+  "types": "webzjs_keys.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

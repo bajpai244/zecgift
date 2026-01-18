@@ -1,0 +1,38 @@
+/* tslint:disable */
+/* eslint-disable */
+export const __wbg_seedfingerprint_free: (a: number, b: number) => void;
+export const seedfingerprint_new: (a: number, b: number) => [number, number, number];
+export const seedfingerprint_to_bytes: (a: number) => [number, number];
+export const seedfingerprint_from_bytes: (a: number, b: number) => [number, number, number];
+export const __wbg_proofgenerationkey_free: (a: number, b: number) => void;
+export const __wbg_unifiedspendingkey_free: (a: number, b: number) => void;
+export const unifiedspendingkey_new: (a: number, b: number, c: number, d: number, e: number) => [number, number, number];
+export const unifiedspendingkey_to_unified_full_viewing_key: (a: number) => number;
+export const unifiedspendingkey_to_sapling_proof_generation_key: (a: number) => number;
+export const __wbg_unifiedfullviewingkey_free: (a: number, b: number) => void;
+export const unifiedfullviewingkey_encode: (a: number, b: number, c: number) => [number, number, number, number];
+export const unifiedfullviewingkey_new: (a: number, b: number, c: number, d: number) => [number, number, number];
+export const generate_seed_phrase: () => [number, number];
+export const pczt_sign: (a: number, b: number, c: number, d: number, e: number) => any;
+export const __wbg_pczt_free: (a: number, b: number) => void;
+export const pczt_to_json: (a: number) => any;
+export const pczt_from_json: (a: any) => number;
+export const pczt_serialize: (a: number) => [number, number];
+export const pczt_from_bytes: (a: number, b: number) => number;
+export const rustsecp256k1_v0_8_1_context_create: (a: number) => number;
+export const rustsecp256k1_v0_8_1_context_destroy: (a: number) => void;
+export const rustsecp256k1_v0_8_1_default_illegal_callback_fn: (a: number, b: number) => void;
+export const rustsecp256k1_v0_8_1_default_error_callback_fn: (a: number, b: number) => void;
+export const __wbindgen_exn_store: (a: number) => void;
+export const __externref_table_alloc: () => number;
+export const __wbindgen_export_2: WebAssembly.Table;
+export const memory: WebAssembly.Memory;
+export const __wbindgen_export_4: WebAssembly.Table;
+export const __wbindgen_malloc: (a: number, b: number) => number;
+export const __wbindgen_realloc: (a: number, b: number, c: number, d: number) => number;
+export const __externref_table_dealloc: (a: number) => void;
+export const __wbindgen_free: (a: number, b: number, c: number) => void;
+export const closure54_externref_shim: (a: number, b: number, c: any) => void;
+export const closure223_externref_shim: (a: number, b: number, c: any, d: any) => void;
+export const __wbindgen_thread_destroy: (a?: number, b?: number, c?: number) => void;
+export const __wbindgen_start: (a: number) => void;
