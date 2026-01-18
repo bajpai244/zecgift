@@ -247,7 +247,10 @@
 	<div class="card">
 		{#if isClaimMode}
 			<!-- CLAIM MODE UI -->
-			<img src="/logo.png" alt="ZecGift" class="logo-img" />
+			<div class="logo-container">
+				<img src="/logo.png" alt="ZecGift" class="logo-img" />
+				<span class="logo-text">ZecGift</span>
+			</div>
 			<p class="tagline">You've received a Zcash gift!</p>
 
 			{#if isLoading}
@@ -314,7 +317,10 @@
 			{/if}
 		{:else}
 			<!-- CREATE MODE UI -->
-			<img src="/logo.png" alt="ZecGift" class="logo-img" />
+			<div class="logo-container">
+				<img src="/logo.png" alt="ZecGift" class="logo-img" />
+				<span class="logo-text">ZecGift</span>
+			</div>
 
 			<p class="tagline">
 				Fund this address to create<br />a Zcash gift card
@@ -414,10 +420,24 @@
 		letter-spacing: -0.5px;
 	}
 
-	.logo-img {
-		width: 120px;
-		height: auto;
+	.logo-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
 		margin-bottom: 16px;
+	}
+
+	.logo-img {
+		width: 48px;
+		height: auto;
+	}
+
+	.logo-text {
+		font-size: 28px;
+		font-weight: 700;
+		color: #1a1a1a;
+		letter-spacing: -0.5px;
 	}
 
 	.tagline {
