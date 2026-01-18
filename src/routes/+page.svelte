@@ -338,17 +338,19 @@
 					</div>
 				</div>
 
-				<div class="gift-link-section">
-					<div class="link-reveal">
-						<div class="link-text" title={giftLink}>
-							{giftLink ? truncateLink(giftLink) : 'Generating...'}
+				{#if balance > 0}
+					<div class="gift-link-section">
+						<div class="link-reveal">
+							<div class="link-text" title={giftLink}>
+								{giftLink ? truncateLink(giftLink) : 'Generating...'}
+							</div>
+							<button class="copy-link-btn" onclick={copyGiftLink} title="Copy gift link">
+								{linkCopied ? 'Copied!' : 'Copy'}
+							</button>
 						</div>
-						<button class="copy-link-btn" onclick={copyGiftLink} title="Copy gift link">
-							{linkCopied ? 'Copied!' : 'Copy'}
-						</button>
+						<p class="share-hint">Share this link with your recipient</p>
 					</div>
-					<p class="share-hint">Once funded, share this link with your recipient</p>
-				</div>
+				{/if}
 			{/if}
 		{/if}
 	</div>
