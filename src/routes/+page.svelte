@@ -355,6 +355,7 @@
 							</button>
 						</div>
 						<p class="share-hint">Share this link with your recipient</p>
+						<p class="disclaimer">Anyone with this link can claim the funds. Share privately and use for small amounts only.</p>
 					</div>
 				{/if}
 			{/if}
@@ -543,6 +544,17 @@
 		font-size: 13px;
 		color: #999;
 		margin: 12px 0 0 0;
+	}
+
+	.disclaimer {
+		font-size: 12px;
+		color: #d32f2f;
+		margin: 12px 0 0 0;
+		background: #ffebee;
+		padding: 10px 12px;
+		border-radius: 8px;
+		border: 1px solid #ffcdd2;
+		line-height: 1.4;
 	}
 
 	.deposit-hint {
