@@ -276,6 +276,15 @@
 					<p class="fee-hint">0.0003 ZEC will be deducted for network fees</p>
 				</div>
 
+				<a
+						href="https://electriccoin.co/zashi/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="wallet-link"
+					>
+						Download Zashi Wallet
+					</a>
+
 				<div class="claim-form">
 					<label for="recipient" class="input-label">Your Zcash Address</label>
 					<input
@@ -720,5 +729,24 @@
 	.explorer-link:hover {
 		background: #e0efff;
 		text-decoration: underline;
+	}
+
+	.wallet-link {
+		display: inline-block;
+		margin-top: 12px;
+		margin-left: 8px;
+		color: white;
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: 600;
+		padding: 8px 16px;
+		background: #2d9cae;
+		border-radius: 8px;
+		transition: background 0.2s;
+	}
+
+	.wallet-link:hover {
+		background: #1f7283;
+		text-decoration: none;
 	}
 </style>
